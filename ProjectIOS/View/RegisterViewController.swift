@@ -27,7 +27,7 @@ class RegisterViewController: UIViewController {
     @IBAction func onRegisterTouched(_ sender: UIButton) {
         if mUserNameLb.text == "" {
             let alert = UIAlertController(title: "Thong Bao", message: "Ban phai nhap username", preferredStyle: .alert)
-            alert.addAction(UI)
+//            alert.addAction(UI)
         }
     }
     
