@@ -27,9 +27,21 @@ class RegisterViewController: UIViewController {
     @IBAction func onRegisterTouched(_ sender: UIButton) {
         if mUserNameLb.text == "" {
             let alert = UIAlertController(title: "Thong Bao", message: "Ban phai nhap username", preferredStyle: .alert)
-//            alert.addAction(UI)
+             alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: {( action ) in }))
             //quynhlx
+        } else if mPassWordLb.text == "" {
+            let alert = UIAlertController(title: "Thong Bao", message: "Ban phai nhap PassWord", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: {( action ) in }))
+            //quynhlx
+        } else if mConfirmpassWordLb.text == "" {
+            let alert = UIAlertController(title: "Thong Bao", message: "Ban phai nhap Confirm PassWord", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: {( action ) in }))
+            //quynhlx
+        } else if mEmailLb.text == "" {
+            let alert = UIAlertController(title: "Thong Bao", message: "Ban phai nhap email",  preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: {( action ) in }))
         }
+        
     }
     
 
