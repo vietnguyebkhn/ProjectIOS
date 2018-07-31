@@ -15,7 +15,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var mUserNameLb: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.hideKeyboardWhenTappedAround() 
         
     }
 
@@ -38,15 +38,9 @@ class ViewController: UIViewController {
                 self.present(alert, animated: true, completion: nil)
         }
     }
-    @IBAction func onSignUpTouched(_ sender: UIButton) {
-        let alert = UIAlertController(title: "Thong Bao", message: "Dang Ky", preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "Ok", style: .cancel, handler: {( action ) in }))
-        self.present(alert, animated: true, completion: nil)
-    }
     
-    @IBAction func onSignUpButtonTouched(_ sender: UIButton) {
-        
-    }
+    
+    
     
 }
 

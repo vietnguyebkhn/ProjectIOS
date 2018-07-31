@@ -14,10 +14,11 @@ class RegisterViewController: UIViewController {
     @IBOutlet weak var mConfirmpassWordLb: UITextField!
     @IBOutlet weak var mPassWordLb: UITextField!
     @IBOutlet weak var mUserNameLb: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        self.hideKeyboardWhenTappedAround()
+       
     }
 
     override func didReceiveMemoryWarning() {
@@ -25,22 +26,25 @@ class RegisterViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     @IBAction func onRegisterTouched(_ sender: UIButton) {
+        var message = ""
+        
         if mUserNameLb.text == "" {
-            let alert = UIAlertController(title: "Thong Bao", message: "Ban phai nhap username", preferredStyle: .alert)
-             alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: {( action ) in }))
+            message = "Ban phai nhap username"
             //quynhlx
         } else if mPassWordLb.text == "" {
-            let alert = UIAlertController(title: "Thong Bao", message: "Ban phai nhap PassWord", preferredStyle: .alert)
-            alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: {( action ) in }))
-            //quynhlx
+            message = "Ban phai nhap PassWord"
         } else if mConfirmpassWordLb.text == "" {
-            let alert = UIAlertController(title: "Thong Bao", message: "Ban phai nhap Confirm PassWord", preferredStyle: .alert)
-            alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: {( action ) in }))
-            //quynhlx
+            message = "Ban phai nhap ConfirmPassWord"
         } else if mEmailLb.text == "" {
-            let alert = UIAlertController(title: "Thong Bao", message: "Ban phai nhap email",  preferredStyle: .alert)
-            alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: {( action ) in }))
+            message = "Ban phai nhap email"
         }
+        
+        if message != "" {
+            let alert = UIAlertController(title: "Thong Bao", message: message ,  preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: {( action ) in }))
+            self.present(alert, animated: true, completion: nil)
+        }
+        
         
     }
     
@@ -54,5 +58,8 @@ class RegisterViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    @IBAction func onBackTouched(_ sender: UIButton) {
+        dismiss(animated: true, completion: nil)
+    }
 
 }
