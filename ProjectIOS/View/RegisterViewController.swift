@@ -10,6 +10,10 @@ import UIKit
 
 class RegisterViewController: UIViewController {
 
+    @IBOutlet weak var mEmailLb: UITextField!
+    @IBOutlet weak var mConfirmpassWordLb: UITextField!
+    @IBOutlet weak var mPassWordLb: UITextField!
+    @IBOutlet weak var mUserNameLb: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -19,6 +23,12 @@ class RegisterViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    @IBAction func onRegisterTouched(_ sender: UIButton) {
+        if mUserNameLb.text == "" {
+            let alert = UIAlertController(title: "Thong Bao", message: "Ban phai nhap username", preferredStyle: .alert)
+            alert.addAction(UI)
+        }
     }
     
 
