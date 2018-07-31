@@ -28,6 +28,7 @@ class RegisterViewController: UIViewController {
         if mUserNameLb.text == "" {
             let alert = UIAlertController(title: "Thong Bao", message: "Ban phai nhap username", preferredStyle: .alert)
 //            alert.addAction(UI)
+            //quynhlx
         }
     }
     
