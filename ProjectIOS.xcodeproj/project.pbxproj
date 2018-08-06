@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A823A0F121114E15001365CF /* TermAndConditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A823A0F021114E15001365CF /* TermAndConditions.swift */; };
 		A84FE31621107431001D28AB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84FE31521107431001D28AB /* ViewController.swift */; };
 		A84FE3182110746E001D28AB /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84FE3172110746E001D28AB /* RegisterViewController.swift */; };
 		A84FE31A2110756F001D28AB /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A84FE3192110756F001D28AB /* Home.storyboard */; };
@@ -37,8 +38,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A823A0F021114E15001365CF /* TermAndConditions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermAndConditions.swift; sourceTree = "<group>"; };
 		A84FE31521107431001D28AB /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		A84FE3172110746E001D28AB /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		A84FE3172110746E001D28AB /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; usesTabs = 0; };
 		A84FE3192110756F001D28AB /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		A84FE31C21107EDB001D28AB /* ExView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExView.swift; sourceTree = "<group>"; };
 		A88ED7CB211042840071FD46 /* ProjectIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -80,6 +82,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A823A0EF21114E03001365CF /* TermAndConditions */ = {
+			isa = PBXGroup;
+			children = (
+				A823A0F021114E15001365CF /* TermAndConditions.swift */,
+			);
+			path = TermAndConditions;
+			sourceTree = "<group>";
+		};
 		A84FE31421107431001D28AB /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -121,6 +131,7 @@
 		A88ED7CD211042840071FD46 /* ProjectIOS */ = {
 			isa = PBXGroup;
 			children = (
+				A823A0EF21114E03001365CF /* TermAndConditions */,
 				A84FE31B21107EBE001D28AB /* Util */,
 				A84FE31421107431001D28AB /* View */,
 				A88ED7CE211042840071FD46 /* AppDelegate.swift */,
@@ -285,6 +296,7 @@
 				A84FE3182110746E001D28AB /* RegisterViewController.swift in Sources */,
 				A84FE31621107431001D28AB /* ViewController.swift in Sources */,
 				A88ED7CF211042840071FD46 /* AppDelegate.swift in Sources */,
+				A823A0F121114E15001365CF /* TermAndConditions.swift in Sources */,
 				A84FE31D21107EDB001D28AB /* ExView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

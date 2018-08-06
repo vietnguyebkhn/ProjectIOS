@@ -43,7 +43,7 @@ class RegisterViewController: UIViewController {
             let alert = UIAlertController(title: "Thong Bao", message: message ,  preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: {( action ) in }))
             self.present(alert, animated: true, completion: nil)
-        }
+        } 
         
         
     }
